@@ -1,0 +1,60 @@
+{
+  "family": {
+    "name": "The Smith Family",
+    "members": 4,
+    "adults": 2,
+    "children": 2
+  },
+  "dietary": {
+    "restrictions": [
+      "lactose-free"
+    ],
+    "allergies": [
+      "peanuts"
+    ],
+    "preferences": [
+      "vegetarian-friendly",
+      "kid-friendly"
+    ]
+  },
+  "cuisines": {
+    "favorite": [
+      "Italian",
+      "Mexican",
+      "Asian",
+      "American"
+    ],
+    "disliked": [
+      "extremely spicy"
+    ]
+  },
+  "planning": {
+    "meals_per_week": 7,
+    "breakfast_at_home": true,
+    "lunch_at_home": false,
+    "dinner_at_home": true,
+    "meal_prep_day": "Sunday",
+    "grocery_shopping_day": "Saturday"
+  },
+  "budget": {
+    "weekly_grocery_budget": 150,
+    "currency": "USD"
+  },
+  "cooking": {
+    "max_prep_time_weekday": 30,
+    "max_prep_time_weekend": 60,
+    "skill_level": "intermediate",
+    "available_appliances": [
+      "oven",
+      "stovetop",
+      "microwave",
+      "slow cooker",
+      "air fryer"
+    ]
+  },
+  "goals": [
+    "balanced nutrition",
+    "reduce food waste",
+    "try new recipes monthly"
+  ]
+}

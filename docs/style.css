@@ -1,0 +1,287 @@
+/* Joulicious Meal Planner Styles */
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #FF9800;
+    --accent-color: #2196F3;
+    --text-color: #333;
+    --bg-color: #f5f5f5;
+    --card-bg: #ffffff;
+    --border-color: #ddd;
+    --hover-color: #e8f5e9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Main Content */
+main {
+    padding: 2rem 0;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+/* Preferences */
+.preferences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.pref-item {
+    padding: 0.75rem;
+    background: var(--hover-color);
+    border-radius: 4px;
+}
+
+.pref-item strong {
+    color: var(--primary-color);
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.week-display {
+    font-weight: bold;
+    font-size: 1.1rem;
+    min-width: 250px;
+    text-align: center;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #f57c00;
+}
+
+.btn-small {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Meal Plan Grid */
+.meal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.day-column {
+    background: var(--bg-color);
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.day-column h3 {
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.meal-slot {
+    background: white;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    border-left: 3px solid var(--accent-color);
+    font-size: 0.9rem;
+}
+
+.meal-slot strong {
+    display: block;
+    color: var(--accent-color);
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+}
+
+.meal-slot em {
+    color: #999;
+}
+
+/* Recipes */
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.recipe-card {
+    background: var(--bg-color);
+    padding: 1.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.recipe-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.recipe-card p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.recipe-card .btn {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* Shopping List */
+#shopping-list {
+    list-style: none;
+    padding: 0;
+}
+
+#shopping-list li {
+    padding: 0.75rem;
+    background: var(--bg-color);
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    border-left: 3px solid var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background: var(--text-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Utility classes */
+.loading {
+    color: #999;
+    font-style: italic;
+}
+
+.error {
+    color: #f44336;
+    font-weight: bold;
+}
+
+.info {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .meal-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .controls {
+        flex-direction: column;
+    }
+    
+    .week-display {
+        order: -1;
+        margin-bottom: 1rem;
+    }
+}

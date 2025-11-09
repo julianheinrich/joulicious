@@ -1,0 +1,93 @@
+name: Meal Plan Generator
+
+on:
+  schedule:
+    # Run every Sunday at 6 PM UTC to generate next week's meal plan
+    - cron: '0 18 * * 0'
+  workflow_dispatch:
+    # Allow manual trigger
+
+jobs:
+  generate-meal-plan:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install pyyaml
+      
+      - name: Generate weekly meal plan
+        run: |
+          echo "Generating meal plan based on preferences..."
+          # Placeholder for meal plan generation logic
+          # This would read from data/preferences.json
+          # and recipes/ directory to create a weekly plan
+          echo "Meal plan generation complete!"
+      
+      - name: Create issue with meal plan
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const date = new Date();
+            const weekStart = new Date(date.setDate(date.getDate() - date.getDay() + 7));
+            const weekEnd = new Date(weekStart);
+            weekEnd.setDate(weekStart.getDate() + 6);
+            
+            const title = `Meal Plan: ${weekStart.toLocaleDateString()} - ${weekEnd.toLocaleDateString()}`;
+            const body = `
+            ## Weekly Meal Plan
+            
+            Generated automatically based on your preferences in \`data/preferences.json\`.
+            
+            ### Monday
+            - Breakfast: TBD
+            - Lunch: TBD
+            - Dinner: TBD
+            
+            ### Tuesday
+            - Breakfast: TBD
+            - Lunch: TBD
+            - Dinner: TBD
+            
+            ### Wednesday
+            - Breakfast: TBD
+            - Lunch: TBD
+            - Dinner: TBD
+            
+            ### Thursday
+            - Breakfast: TBD
+            - Lunch: TBD
+            - Dinner: TBD
+            
+            ### Friday
+            - Breakfast: TBD
+            - Lunch: TBD
+            - Dinner: TBD
+            
+            ### Saturday
+            - Breakfast: TBD
+            - Lunch: TBD
+            - Dinner: TBD
+            
+            ### Sunday
+            - Breakfast: TBD
+            - Lunch: TBD
+            - Dinner: TBD
+            
+            ---
+            *Edit this issue to customize your meal plan for the week.*
+            `;
+            
+            // This is a placeholder - in a real implementation,
+            // this would create an issue with the generated meal plan
+            console.log(title);
+            console.log(body);

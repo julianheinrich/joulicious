@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joulicious - Family Meal Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🍽️ Joulicious</h1>
+            <p class="tagline">Smart Family Meal Planning</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="preferences-section" class="card">
+            <h2>Family Preferences</h2>
+            <div id="preferences-display">
+                <p class="loading">Loading preferences...</p>
+            </div>
+        </section>
+
+        <section id="meal-plan-section" class="card">
+            <h2>Weekly Meal Plan</h2>
+            <div class="controls">
+                <button id="prev-week" class="btn btn-secondary">← Previous Week</button>
+                <span id="current-week" class="week-display"></span>
+                <button id="next-week" class="btn btn-secondary">Next Week →</button>
+            </div>
+            <div id="meal-plan-grid">
+                <!-- Meal plan grid will be populated by JavaScript -->
+            </div>
+            <button id="generate-plan" class="btn btn-primary">Generate New Meal Plan</button>
+        </section>
+
+        <section id="recipes-section" class="card">
+            <h2>Recipe Library</h2>
+            <div id="recipes-list">
+                <p class="loading">Loading recipes...</p>
+            </div>
+        </section>
+
+        <section id="shopping-list-section" class="card">
+            <h2>Shopping List</h2>
+            <p class="info">Shopping list will be generated based on your meal plan.</p>
+            <ul id="shopping-list">
+                <!-- Shopping list items will be populated by JavaScript -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Powered by GitHub Pages | <a href="https://github.com/julianheinrich/joulicious" target="_blank">View on GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
