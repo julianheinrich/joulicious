@@ -13,11 +13,11 @@ A quick and easy breakfast classic that's perfect for busy mornings.
 
 ## Ingredients
 
-- 4 large eggs
-- 2 tablespoons milk or cream
-- 1 tablespoon butter
-- Salt and pepper to taste
-- Optional: shredded cheese, chopped herbs (chives, parsley)
+- 4 [large eggs](../ingredients/eggs.md)
+- 2 tablespoons [milk](../ingredients/milk.md) or cream
+- 1 tablespoon [butter](../ingredients/butter.md)
+- [Salt](../ingredients/salt.md) and [pepper](../ingredients/pepper.md) to taste
+- Optional: [shredded cheese](../ingredients/cheese-cheddar.md), chopped herbs (chives, parsley)
 
 ## Equipment
 
@@ -55,6 +55,17 @@ A quick and easy breakfast classic that's perfect for busy mornings.
 - Protein: 13g
 - Fat: 13g
 - Carbohydrates: 2g
+
+## Family Scores (Ingredient-Based)
+
+This recipe's score is calculated as the average of ingredient scores:
+
+- **Alice**: 3.7 (avg of eggs:4, milk:2, butter:5)
+- **Bob**: 4.3 (avg of eggs:5, milk:3, butter:5)
+- **Charlie**: 3.7 (avg of eggs:3, milk:4, butter:4)
+- **Diana**: 4.0 (avg of eggs:4, milk:3, butter:5)
+
+*Note: Salt and pepper (seasonings with score 0) are excluded from scoring calculations.*
 
 ## Storage
 
