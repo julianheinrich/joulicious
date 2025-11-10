@@ -3,7 +3,8 @@
     "name": "The Smith Family",
     "members": 4,
     "adults": 2,
-    "children": 2
+    "children": 2,
+    "member_names": ["Alice", "Bob", "Charlie", "Diana"]
   },
   "dietary": {
     "restrictions": [
