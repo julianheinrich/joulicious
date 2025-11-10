@@ -61,7 +61,7 @@ A quick and easy breakfast classic that's perfect for busy mornings.
 This recipe's score is calculated as the average of ingredient scores:
 
 - **Alice**: 3.7 (avg of eggs:4, milk:2, butter:5)
-- **Bob**: 4.0 (avg of eggs:5, milk:3, butter:5)
+- **Bob**: 4.3 (avg of eggs:5, milk:3, butter:5)
 - **Charlie**: 3.7 (avg of eggs:3, milk:4, butter:4)
 - **Diana**: 4.0 (avg of eggs:4, milk:3, butter:5)
 

@@ -63,12 +63,12 @@ A quick and healthy dinner that combines tender chicken with vegetables over flu
 
 This recipe's score is calculated as the average of ingredient scores:
 
-- **Alice**: 4.5 (avg of chicken:5, rice:4, onion:3, tomato:4)
+- **Alice**: 4.0 (avg of chicken:5, rice:4, onion:3, tomato:4)
 - **Bob**: 4.0 (avg of chicken:5, rice:4, onion:4, tomato:3)
 - **Charlie**: 4.0 (avg of chicken:4, rice:5, onion:2, tomato:5)
 - **Diana**: 4.0 (avg of chicken:5, rice:4, onion:3, tomato:4)
 
-**Overall Family Average**: 4.1 - This recipe should be enjoyed by everyone!
+**Overall Family Average**: 4.0 - This recipe should be enjoyed by everyone!
 
 *Note: Salt and pepper (seasonings with score 0) are excluded from scoring calculations.*
 
